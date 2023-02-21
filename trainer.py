@@ -549,15 +549,15 @@ if __name__ == '__main__':
     parser.add_argument('--mode', type=str, default='train')
 
     # Path Argument
-    parser.add_argument('--vocab_path', type=str, default='./data/new_data/vocab.pkl',
+    parser.add_argument('--vocab_path', type=str, default='/content/Medical-Report-Generation/data/new_data/vocab.pkl',
                         help='the path for vocabulary object')
     parser.add_argument('--image_dir', type=str, default='./data/images',
                         help='the path for images')
-    parser.add_argument('--caption_json', type=str, default='./data/new_data/captions.json',
+    parser.add_argument('--caption_json', type=str, default='/content/Medical-Report-Generation/data/new_data/captions.json',
                         help='path for captions')
-    parser.add_argument('--train_file_list', type=str, default='./data/new_data/train_data.txt',
+    parser.add_argument('--train_file_list', type=str, default='/content/Medical-Report-Generation/data/new_data/train_data.txt',
                         help='the train array')
-    parser.add_argument('--val_file_list', type=str, default='./data/new_data/val_data.txt',
+    parser.add_argument('--val_file_list', type=str, default='/content/Medical-Report-Generation/data/new_data/val_data.txt',
                         help='the val array')
     # transforms argument
     parser.add_argument('--resize', type=int, default=256,
